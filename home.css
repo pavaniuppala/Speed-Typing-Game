@@ -1,0 +1,325 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+#navbar::before{
+    content:"" ;
+    background-color: rgb(133, 92, 64);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+#logo p,
+#logo p a
+{
+    color: rgb(255, 140, 194);
+	padding: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	background-color: rgb(6, 80, 144);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	border-radius: 20px;
+	
+}
+
+#logo
+{
+    margin: .3rem;
+} 
+
+video{
+    display: flex;
+    flex-direction: column;
+    background-attachment:fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+       z-index: -1;
+  }
+@font-face {
+	font-family: Clip;
+	src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  }
+  
+  body {
+	background-color: #ffc7b0;
+	
+  }
+  
+  .sign {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 50%;
+	background-image: radial-gradient(
+	  ellipse 50% 35% at 50% 50%,
+	  #6b1839,
+	  transparent
+	);
+	transform: translate(-50%, -50%);
+	letter-spacing: 2;
+	left: 50%;
+	top: 50%;
+	font-family: "Clip";
+	text-transform: uppercase;
+	font-size: 6em;
+	color: #ffe6ff;
+	text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+	  -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+	  0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+	animation: shine 2s forwards, flicker 3s infinite;
+  }
+  
+  @keyframes blink {
+	0%,
+	22%,
+	36%,
+	75% {
+	  color: #4fff8a;
+	  text-shadow: 0 0 0.6rem #bff2c3, 0 0 1.5rem #68cda5,
+		-0.2rem 0.1rem 1rem #00ff15, 0.2rem 0.1rem 1rem #5edf8f,
+		0 -0.5rem 2rem #9ee289, 0 0.5rem 3rem #83d67e;
+	}
+	28%,
+	33% {
+	  color: #a7f5a5;
+	  text-shadow: none;
+	}
+	82%,
+	97% {
+	  color: #23a79e;
+	  text-shadow: none;
+	}
+  }
+  
+  .flicker {
+	animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+  
+  .fast-flicker {
+	animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+	0% {
+	  color: #eed15a;
+	  text-shadow: none;
+	}
+	100% {
+	  color: #ffe6ff;
+	  text-shadow: 0 0 0.6rem #93eed0, 0 0 1.5rem #11c447,
+		-0.2rem 0.1rem 1rem #1deba6, 0.2rem 0.1rem 1rem #507a59,
+		0 -0.5rem 2rem #81ee87, 0 0.5rem 3rem #309680;
+	}
+  }
+  
+  @keyframes flicker {
+	from {
+	  opacity: 1;
+	}
+  
+	4% {
+	  opacity: 0.9;
+	}
+  
+	6% {
+	  opacity: 0.85;
+	}
+  
+	8% {
+	  opacity: 0.95;
+	}
+  
+	10% {
+	  opacity: 0.9;
+	}
+  
+	11% {
+	  opacity: 0.922;
+	}
+  
+	12% {
+	  opacity: 0.9;
+	}
+  
+	14% {
+	  opacity: 0.95;
+	}
+  
+	16% {
+	  opacity: 0.98;
+	}
+  
+	17% {
+	  opacity: 0.9;
+	}
+  
+	19% {
+	  opacity: 0.93;
+	}
+  
+	20% {
+	  opacity: 0.99;
+	}
+  
+	24% {
+	  opacity: 1;
+	}
+  
+	26% {
+	  opacity: 0.94;
+	}
+  
+	28% {
+	  opacity: 0.98;
+	}
+  
+	37% {
+	  opacity: 0.93;
+	}
+  
+	38% {
+	  opacity: 0.5;
+	}
+  
+	39% {
+	  opacity: 0.96;
+	}
+  
+	42% {
+	  opacity: 1;
+	}
+  
+	44% {
+	  opacity: 0.97;
+	}
+  
+	46% {
+	  opacity: 0.94;
+	}
+  
+	56% {
+	  opacity: 0.9;
+	}
+  
+	58% {
+	  opacity: 0.9;
+	}
+  
+	60% {
+	  opacity: 0.99;
+	}
+  
+	68% {
+	  opacity: 1;
+	}
+  
+	70% {
+	  opacity: 0.9;
+	}
+  
+	72% {
+	  opacity: 0.95;
+	}
+  
+	93% {
+	  opacity: 0.93;
+	}
+  
+	95% {
+	  opacity: 0.95;
+	}
+  
+	97% {
+	  opacity: 0.93;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+  }
+ 
+  /* section img{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+       z-index: -1;
+	   margin-top: 500px;
+  } */
+  section #rule{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    padding-bottom: 50px;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-top: 20px;
+	color: rgb(0, 0, 0);
+    margin-top: 700px;
+}
+section .head{
+	margin-top: -10px;
+	margin-bottom: 20px ;
+	color: #0e2507f8;
+	font-size: 1.5rem;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+section h2{
+	color: #2a0368;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: .8 rem;
+	margin: 4px;
+}
+section p{
+	color: rgb(77, 2, 72);
+	font-family: 'Times New Roman', Times, serif;
+}
+header .start {
+	display: flex;
+	justify-content: center;
+	margin-top: 30rem;
+	margin-bottom: -30rem;
+	font-weight: bold;	
+  }
+  header .start button {
+	  background-color: hsl(342, 81%, 75%);
+	  padding: 3px 16px;
+	  margin: 5px;
+	  font-weight: bold;
+	  font-size: 1.5rem;
+	  border: 2px solid#da0157;
+	  border-radius: 20px;
+	  
+  }
+  header .start button a{
+	  text-decoration: none;
+  }
+  header .start button:hover{
+	  background-color: rgb(221, 231, 197);
+  }
+
